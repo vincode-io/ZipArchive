@@ -19,6 +19,7 @@ let package = Package(
             name: "ZipArchive",
             path: "SSZipArchive",
             cSettings: [
+				.headerSearchPath("include"),
                 .define("HAVE_INTTYPES_H"),
                 .define("HAVE_PKCRYPT"),
                 .define("HAVE_STDINT_H"),
